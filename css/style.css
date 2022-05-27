@@ -1,0 +1,115 @@
+@font-face {
+  font-family: Gotham Pro;
+  src: url(fonts/GothamPro-Medium.ttf); }
+@font-face {
+  font-family: Gotham Pro Light;
+  src: url(fonts/GothamPro-Light.ttf); }
+body {
+  font-family: Gotham Pro; }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+section.top {
+  background: url("/images/top-bg.jpg") 50% 0 no-repeat fixed; }
+
+section.generic {
+  background: url("/images/tabs-buisness.jpg") 50% 0 no-repeat fixed; }
+
+.top-contacts {
+  cursor: default;
+  font-size: 10pt; }
+
+.top-contacts-item i {
+  transition: 1s; }
+.top-contacts-item:hover i {
+  color: #e31e24; }
+
+.btn-red, .btn-tran {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  transition: all 0.3s 0s; }
+
+.btn-red {
+  font-size: 10pt;
+  color: #fff;
+  background: #e31e24; }
+  .btn-red:hover {
+    background: none;
+    color: #e31e24;
+    border-color: #e31e24; }
+  .top-callback .btn-red {
+    text-transform: uppercase; }
+
+.btn-tran {
+  font-size: 10pt;
+  color: #e31e24;
+  background: none;
+  border-color: #e31e24; }
+  .btn-tran:hover {
+    background: #e31e24;
+    color: #fff;
+    border-color: transparent; }
+
+.topSlider-h {
+  color: #e31e24; }
+
+#topSlider .container .row .col-8 .btn-red {
+  width: 100%; }
+#topSlider .container .row .col-4 .btn-tran {
+  width: 100%;
+  height: 100%; }
+  #topSlider .container .row .col-4 .btn-tran span.middle {
+    vertical-align: -50%; }
+
+.top-slider-control {
+  color: #363636; }
+  .top-slider-control:hover {
+    color: #e31e24; }
+
+.top-navbar {
+  font-size: 15pt;
+  font-family: Gotham Pro Light; }
+  .top-navbar .top-navbar-item {
+    vertical-align: 25%; }
+
+.tabs-h {
+  width: 33.3333333333%; }
+
+.tabs-button {
+  width: 16.6666666667%; }
+  .tabs-button a {
+    height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: #363636;
+    background-color: #fffb !important;
+    border: none !important;
+    border-radius: 0 !important; }
+  .tabs-button a:hover {
+    color: #e31e24; }
+  .tabs-button a.active {
+    background-color: rgba(227, 30, 36, 0.8) !important;
+    color: #fff !important; }
+
+.tabs-link {
+  color: #e31e24;
+  text-transform: uppercase; }
+  .tabs-link:hover {
+    color: #ac151a; }
+
+.tab-pane {
+  border: 2px solid #e31e24;
+  background-color: #fff;
+  font-size: 10pt; }
+  .tab-pane div.container div.row div.col-9 {
+    margin-top: 2em; }
+
+#tabsBuisness {
+  border: none; }
+
+/*# sourceMappingURL=style.css.map */

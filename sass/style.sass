@@ -1,0 +1,126 @@
+@font-face 
+  font-family: Gotham Pro
+  src: url(fonts/GothamPro-Medium.ttf)
+@font-face 
+  font-family: Gotham Pro Light
+  src: url(fonts/GothamPro-Light.ttf)
+
+$red: #e31e24
+$gray: #363636
+
+body
+  font-family: Gotham Pro
+a
+  text-decoration: none
+  cursor: pointer
+
+section.top
+  background: url('/images/top-bg.jpg') 50% 0 no-repeat fixed
+
+section.generic
+  background: url('/images/tabs-buisness.jpg') 50% 0 no-repeat fixed
+
+.top-contacts
+  cursor: default
+  font-size: 10pt
+
+.top-contacts-item
+  i
+    transition: 1s
+  &:hover
+    i
+      color: $red
+
+%btn
+  display: inline-block
+  padding: 0.5rem 1rem
+  border: 2px solid transparent
+  transition: all 0.3s 0s
+
+.btn-red
+  @extend  %btn
+  font-size: 10pt
+  color: #fff
+  background: $red
+  &:hover
+    background: none
+    color: $red
+    border-color: $red
+  .top-callback &
+    text-transform: uppercase
+
+.btn-tran
+  @extend %btn
+  font-size: 10pt
+  color: $red
+  background: none
+  border-color: $red
+  &:hover
+    background: $red
+    color: #fff
+    border-color: transparent
+
+
+.topSlider-h
+  color: $red
+#topSlider
+  .container
+    .row
+      .col-8
+        .btn-red
+          width: 100%
+      .col-4
+        .btn-tran
+          width: 100%
+          height: 100%
+          span.middle
+            vertical-align: -50%
+
+.top-slider-control
+  color: $gray
+  &:hover
+    color: $red
+  
+.top-navbar
+  font-size: 15pt
+  font-family: Gotham Pro Light
+  .top-navbar-item
+    vertical-align: 25%
+
+.tabs-h
+  width: (100%/6)*2
+
+.tabs-button
+  width: (100%/6)
+  a
+    height: 100%
+    text-align: center
+    text-transform: uppercase
+    padding-top: 1em
+    padding-bottom: 1em
+    color: $gray
+    background-color: #fffb !important
+    border: none !important
+    border-radius: 0 !important
+  a:hover
+    color: $red
+  a.active
+    background-color: rgba($red, .8) !important
+    color: #fff !important
+
+.tabs-link
+  color: $red
+  text-transform: uppercase
+  &:hover
+    color: darken($red, 12.5%)
+.tab-pane
+  border: 2px solid $red
+  background-color: #fff
+  font-size: 10pt
+  div.container
+    div.row
+      div.col-9
+        margin-top: 2em
+
+#tabsBuisness
+  border: none
